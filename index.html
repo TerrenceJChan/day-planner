@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Day Planner</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
@@ -15,6 +20,8 @@
     <header>
         <h1>Dynamic Day Planner</h1>
         <p>Enter text in the day planner, and then click on the save icon to save.</p>
+        <br>
+        <p id="current-time">Current Time</p>
     </header>
 
     <hr>
@@ -25,6 +32,167 @@
                 <label for="t0">12:00 AM</label>
                 <div class="planner-input">
                     <input type="text" name="t0">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t1">1:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t0">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t2">2:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t2">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t3">3:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t3">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t4">4:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t4">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t5">5:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t5">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t6">6:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t6">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t7">7:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t7">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t8">8:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t8">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t9">9:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t9">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t10">10:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t10">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t11">11:00 AM</label>
+                <div class="planner-input">
+                    <input type="text" name="t11">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t12">12:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t12">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t13">1:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t13">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t14">2:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t14">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t15">3:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t15">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t16">4:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t16">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t17">5:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t17">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t18">6:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t18">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t19">7:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t19">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t20">8:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t20">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t21">9:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t21">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t22">10:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t22">
+                </div>
+                <span class="fas fa-save save"></span>
+            </div>
+            <div class="planner-section">
+                <label for="t23">11:00 PM</label>
+                <div class="planner-input">
+                    <input type="text" name="t23">
                 </div>
                 <span class="fas fa-save save"></span>
             </div>
