@@ -1,0 +1,30 @@
+/* GLOBAL Start */
+
+hr {
+    height: 5px;
+    width: 80%;
+}
+
+/* GLOBAL End */
+
+/* HEADER Start */
+
+header {
+    text-align: center;
+}
+
+/* HEADER End */
+
+/* PLANNER Start */
+
+.planner-input {
+    display: inline;
+    width: 60%;
+    height: 20px;
+}
+
+#planner-wrapper {
+    display: flex;
+    justify-content: center;
+}
+/* PLANNER End */
