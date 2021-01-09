@@ -16,18 +16,31 @@ header {
 /* HEADER End */
 
 /* PLANNER Start */
+
 .planner-section {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .planner-input {
-    display: inline;
+    display: inline-block;
     margin: 0 1rem;
 }
 
-#planner-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.text-input {
+    display: inline-block;
 }
+
+#planner-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+#planner-wrapper label {
+    display: inline-block;
+    text-align: right;
+    width: 9ch;
+}
+
 /* PLANNER End */
