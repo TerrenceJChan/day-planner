@@ -1,3 +1,5 @@
+var currentHour = parseInt((moment().format('HH')));
+
 // Displays current time
 $('#current-time').text(moment().format('MMMM Do YYYY'));
 
@@ -13,5 +15,17 @@ for (let i = 0; i < 24; i++) {
     })
 }
 
+// Save everything in localStorage
+$('#save-all').click(function () {
+    for (let i = 0; i < 24; i++) {
+        localStorage.setItem(JSON.stringify(i), JSON.stringify($('.text-input').eq(i).val()));
+    }
+})
 
-
+// Clears everything in localStorage
+$('#reset').click(function () {
+    for (let i = 0; i < 24; i++) {
+        localStorage.setItem(JSON.stringify(i), '');
+    }
+    location.reload;
+})

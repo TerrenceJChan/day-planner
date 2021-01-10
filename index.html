@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Day Planner</title>
+    <title>Day Planner</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <h1>Dynamic Day Planner</h1>
+        <h1>Day Planner</h1>
         <p>Enter text in the day planner, and then click on the save icon to save.</p>
         <br>
         <p id="current-time">Current Time</p>
@@ -27,6 +27,11 @@
     <hr>
 
     <main>
+        <div id="options-wrapper">
+            <button id="save-all" class="btn">Save All</button>
+            <button id="reset" class="btn">Reset All</button>
+        </div>
+        <hr>
         <div id="planner-wrapper">
             <div class="planner-section">
                 <label for="t0">12:00 AM</label>

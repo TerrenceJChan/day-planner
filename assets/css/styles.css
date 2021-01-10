@@ -1,5 +1,17 @@
 /* GLOBAL Start */
 
+html {}
+
+body {
+    background: rgb(221, 221, 221);
+    background: linear-gradient(0deg, rgba(221, 221, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    overflow: hidden;
+}
+
+label {
+    color: #67698C;
+}
+
 hr {
     height: 5px;
     width: 80%;
@@ -15,12 +27,44 @@ header {
 
 /* HEADER End */
 
+/* BUTTONS Start */
+
+.btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #000000;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #67698C;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #67698C;
+}
+
+#options-wrapper {
+    text-align: center;
+}
+
+/* BUTTONS End */
+
 /* PLANNER Start */
 
 .planner-section {
-    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #67698C;
+    width: 50%;
 }
 
 .planner-input {
@@ -33,8 +77,8 @@ header {
 }
 
 #planner-wrapper {
-    width: 100%;
     text-align: center;
+    overflow-y: scroll;
 }
 
 #planner-wrapper label {
