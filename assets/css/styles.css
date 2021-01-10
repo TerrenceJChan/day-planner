@@ -1,11 +1,9 @@
 /* GLOBAL Start */
 
-html {}
-
 body {
     background: rgb(221, 221, 221);
     background: linear-gradient(0deg, rgba(221, 221, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    overflow: hidden;
+    margin-top: 0;
 }
 
 label {
@@ -23,6 +21,13 @@ hr {
 
 header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(221, 221, 221);
+}
+
+header h1 {
+    margin-top: 0;
 }
 
 /* HEADER End */
@@ -78,7 +83,6 @@ header {
 
 #planner-wrapper {
     text-align: center;
-    overflow-y: scroll;
 }
 
 #planner-wrapper label {

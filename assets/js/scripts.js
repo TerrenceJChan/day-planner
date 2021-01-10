@@ -1,11 +1,23 @@
 var currentHour = parseInt((moment().format('HH')));
 
+function removeQuotes(text) {
+    if (text !== null) {
+        while (text.slice(0, 1) == '\"') {
+            text = text.substring(1);
+        }
+        while (text.slice(-1) == '\"') {
+            text = text.slice(0, -1);
+        }
+        return text;
+    }
+}
+
 // Displays current time
 $('#current-time').text(moment().format('MMMM Do YYYY'));
 
 // localStorage loader
 for (let i = 0; i < 24; i++) {
-    $('.text-input').eq(i).val(localStorage.getItem(JSON.stringify(i)));
+    $('.text-input').eq(i).val(removeQuotes(localStorage.getItem(JSON.stringify(i))));
 }
 
 // localStorage saver
@@ -24,8 +36,8 @@ $('#save-all').click(function () {
 
 // Clears everything in localStorage
 $('#reset').click(function () {
+    localStorage.clear();
     for (let i = 0; i < 24; i++) {
-        localStorage.setItem(JSON.stringify(i), '');
+        $('.text-input').eq(i).val('');
     }
-    location.reload;
 })
