@@ -1,9 +1,16 @@
 /* GLOBAL Start */
 
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background: rgb(221, 221, 221);
     background: linear-gradient(0deg, rgba(221, 221, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 label {
@@ -21,13 +28,18 @@ hr {
 
 header {
     text-align: center;
-    position: sticky;
-    top: 0;
+    padding-bottom: 5px;
     background-color: rgb(221, 221, 221);
 }
 
 header h1 {
     margin-top: 0;
+}
+
+
+
+#current-time {
+    font-weight: bold;
 }
 
 /* HEADER End */
@@ -69,6 +81,7 @@ header h1 {
     margin-top: 2px;
     margin-bottom: 2px;
     border: 1px solid #67698C;
+    background-color: greenyellow;
     width: 50%;
 }
 
