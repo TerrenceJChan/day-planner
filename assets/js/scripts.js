@@ -48,4 +48,8 @@ if (currentHour >= 8 && currentHour <= 17) {
         $('.planner-section').eq(i).css('background-color', 'grey');
     }
     $('.planner-section').eq(currentHour - 9).css('background-color', 'red')
+} else if (currentHour > 17) {
+    for (i = 0; i < currentHour - 8; i++) {
+        $('.planner-section').eq(i).css('background-color', 'grey');
+    }
 }
